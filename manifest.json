@@ -1,9 +1,8 @@
 {
-    "name": "Page Redder",
-    "action": {},
+    "name": "Qiscus Multichannel Extension",
     "manifest_version": 3,
     "version": "0.1",
-    "description": "Turns the page red when you click the icon",
+    "description": "Styling multichannel from client side",
     "permissions": [
         "activeTab",
         "scripting",
@@ -17,5 +16,9 @@
           "matches": ["https://multichannel.qiscus.com/web/*"],
           "js": ["styleExtension.js"]
         }
-    ]
+    ],
+    "action": {
+        "default_title": "Qiscus Multichannel Extension",
+        "default_popup": "ui/menu.html"
+    }
 }
